@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  background: #111;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  padding: 10px;
+  background: #1c1c1c;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+input {
+  flex: 1;
+  padding: 6px;
+}
+
+button {
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+th, td {
+  border: 1px solid #333;
+  padding: 6px;
+  text-align: center;
+}
+
+th {
+  background: #222;
+}
+
+#graphOverlay {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  z-index: 999;
+  padding: 10px;
+}
+
+#graphOverlay.hidden {
+  display: none;
+}
+
+#closeGraph {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+}
+
+canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
