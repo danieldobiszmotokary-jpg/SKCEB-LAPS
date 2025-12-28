@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Apex Timing Lap Tracker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <header>
+    <h2>Apex Timing – Lap Tracker</h2>
+    <div class="controls">
+      <input id="apexUrl" placeholder="Paste Apex Timing URL here" />
+      <button id="startBtn">Start Tracking</button>
+    </div>
+  </header>
+
+  <main>
+    <table id="timingTable">
+      <thead>
+        <tr>
+          <th>Position</th>
+          <th>Team</th>
+          <th>Kart</th>
+          <th>Last Lap</th>
+          <th>Best Lap</th>
+          <th>Graph</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </main>
+
+  <div id="graphOverlay" class="hidden">
+    <button id="closeGraph">✕</button>
+    <canvas id="lapChart"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
